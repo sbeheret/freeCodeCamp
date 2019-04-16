@@ -226,6 +226,25 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 *   <a href='http://forum.freecodecamp.com/t/javascript-string-prototype-tolowercase/15948' target='_blank' rel='nofollow'>JS String Prototype ToLowerCase</a>
 *   <a href='http://forum.freecodecamp.com/t/javascript-array-prototype-join/14292' target='_blank' rel='nofollow'>JS Array Prototype Join</a>
 
+## ![:rotating_light:](https://forum.freecodecamp.com/images/emoji/emoji_one/rotating_light.png?v=3 ":rotating_light:") Advanced Code Solution Alternative 3:
+
+```javascript
+
+function translatePigLatin(str) {
+  let firstConsonnants;
+  
+  if (firstConsonnants = str.match(/^[^aeiou]+/)) {
+    return str.substring(firstConsonnants[0].length) + firstConsonnants[0] + 'ay';
+  }
+  return str + 'way';
+}
+
+console.log(translatePigLatin("Bravo"));
+```
+#### Relevant Links
+Regexp
+String.prototype.match
+
 ## ![:clipboard:](https://forum.freecodecamp.com/images/emoji/emoji_one/clipboard.png?v=3 ":clipboard:") NOTES FOR CONTRIBUTIONS:
 
 *   ![:warning:](https://forum.freecodecamp.com/images/emoji/emoji_one/warning.png?v=3 ":warning:") **DO NOT** add solutions that are similar to any existing solutions. If you think it is **_similar but better_**, then try to merge (or replace) the existing similar solution.
